@@ -1,0 +1,6 @@
+django 
+djangorestframework 
+django-cors-headers
+psycopg2
+psycopg2-binary
+bs4

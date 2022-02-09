@@ -11,6 +11,11 @@
 ## Week 4 ##
 
 ## Week 5 ##
+- Starting next week during faculty time each team member will present their work by answering the questions: 
+	- what I did since last time
+	- what I am planning this time
+  - what are the blockers (if any)
+
 
 ## Week 6 ##
 

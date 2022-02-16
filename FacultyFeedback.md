@@ -18,6 +18,10 @@
 
 
 ## Week 6 ##
+- Break work up to as you reimplement pages
+- Work toward completing to functional components change 3/1
+- From there figure out the  next scenario you are driving for
+
 
 ## Week 7 ##
 

@@ -155,6 +155,7 @@ Scenario #2
 2. **Interrupt team members trying to give input**
 
 | **Week** | **PM** | **Date** |
+| --- | --- | --- |
 | 1 | Sohaib | 2/8/22 |
 | 2 | Sohaib | 2/15/22 |
 | 3 | Saurim | 2/22/22 |

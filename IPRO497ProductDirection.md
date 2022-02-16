@@ -94,10 +94,8 @@ Backend:
 
 - Some cloud provider
 
-  1. GCP
-  2. AWS
-  3. Azure
-1. Local hosting
+  * GCP
+  * Local hosting
 
   1. Docker container hosting webapp
   2. Run locally with npm

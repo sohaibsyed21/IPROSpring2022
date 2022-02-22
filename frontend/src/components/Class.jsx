@@ -6,7 +6,7 @@ import Home from "./Home"
 import "../styles.scss" 
 import {Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import insider from '../insider_platform_1.png';
-
+//function Class(props){
 class Class extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +23,15 @@ class Class extends Component {
     //console.log("localStorage courseDesc: " + localStorage.getItem("courseDesc"))
     //console.log("POSTLIST FROM HOME3: " + this.state.postList)
   }  
-  
+  //replacement for constructor code
+  /* const [postList, setPostList] = useState([]);
+     const [oldPostList, setOldPostList] = useState([1]);
+     const [classList, setClassList] = useState([]);
+     const [class, setClass] = localStorage.getItem("Class") || props.location.state.selectedCourse ; //unsure about this one
+     const [name, setName] = useState("");
+     const [postComment, setPostComment] = useState("");
+     const [classDesc, setClassDesc] = localStorage.getItem("courseDesc") || props.location.state.selectedDesc || ""; //unsure about this one
+  */
   //////////// START TESTING AREA /////////////
 
   renderPost = () => {
@@ -81,7 +89,6 @@ class Class extends Component {
   }
 
   handlePost = Posts => {
-    //this.setState({class: this.state.class})
     console.log("handlePost: " + this.state.name + "- " + this.state.postComment)
     axios
       .post("http://localhost:8000/api/Posts/", 

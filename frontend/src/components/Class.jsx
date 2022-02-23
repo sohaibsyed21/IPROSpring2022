@@ -66,8 +66,14 @@ class Class extends Component {
       .then(res => this.setState({ postList: res.data.filter(classNum => classNum.Classes === this.state.class) }))
       .catch(err => console.log(err));
 
-    
   };
+  /*refreshPosts = () => {
+    axios
+    .get("http://localhost:8000/api/Posts/")
+    .then(res => setPostList(res.data.filter(classNum => classNum.Classes === class)))
+    .catch(err => console.log(err))
+  }
+  */
 
   ////////// END TESTING AREA //////////
 
@@ -77,6 +83,15 @@ class Class extends Component {
       .then(res => this.setState({ classList: res.data }))
       .catch(err => console.log(err));
   };
+
+  /*
+  refreshClasses = () => {
+    axios
+    .get("http://localhost:8000/api/Classes/")
+    .then(res => setClassList(res.data))
+    .catch(err => console.log(err))
+  }
+  */
   
 
   handleName = (event) => {

@@ -24,6 +24,9 @@ class Posts(models.Model):
     Classes = models.ForeignKey(
         Classes, on_delete=models.CASCADE, related_name='Classes+'
     )
+    ParentPost = models.ForeignKey(
+        'self', on_delete=models.CASCADE, related_name='Posts+', default="0000"
+    )
 
     def __str(self):
         return self.name

@@ -59,6 +59,34 @@ class Class extends Component {
       </div>
     ));
   };
+  /*
+  renderPost = () => {
+    //this.state.postList = PostList;
+    if (postList.length !== oldPostList.length){
+      //console.log("THE POSTS ARE NOT EQUAL TO EACH OTHER")
+      //console.log("OLD POST LIST: " + this.state.oldPostList.length)
+      //console.log("NEW POST LIST: " + this.state.postList.length)
+      this.state.oldPostList = this.state.postList;
+      setOldPostList(postList);
+      refreshPosts();
+    }
+    
+    return postList.map(Posts => (
+      <div className="divStyle">
+        <h4 key = {Posts.id}>
+          <span  title = {Posts.name}>
+                {Posts.name}
+          </span>
+        </h4>
+        <h5 key = {Posts.id}>
+          <p title = {Posts.contents}>
+            {Posts.contents}
+          </p>
+        </h5>
+      </div>
+    ));
+  };
+   */
 
   refreshPosts = () => {
     axios
@@ -83,11 +111,21 @@ class Class extends Component {
     console.log("handleName: " + event.target.value)
     this.state.name = event.target.value
   }
+  /*
+  const handleName= e =>{
+    console.log("handleName: " + event.target.value)
+    setName(e.target.value);
+  };
+  */
 
   handleComment = (event) => {
     this.state.postComment = event.target.value
   }
-
+  /*
+  const handleComment= e =>{
+    setPostComment(e.target.value);
+  };
+  */
   handlePost = Posts => {
     console.log("handlePost: " + this.state.name + "- " + this.state.postComment)
     axios
@@ -103,6 +141,22 @@ class Class extends Component {
     localStorage.setItem('Class', this.state.class);
     
   }
+  /*
+  const handlePost= () => {
+    console.log("handlePost: " + name + "- " + postComment)
+    axios
+      .post("http://localhost:8000/api/Posts/",
+      {
+        name: String(name),
+        contents: String(postComment),
+        Classes: class,
+      })
+      .then(res => refreshPosts())
+      .catch(err => console.log("handlePost error: " + err));
+    
+    localStorage.setItem('Class', class);
+  };
+  */
 
   render() {
     return (
@@ -144,9 +198,46 @@ class Class extends Component {
       </section>
     </div>
     );
+    /*
+    return (
+    
+    <div className="class">
+      <div class="container">
+        <div class="row align-items-center my-5">
+          <div class="insiders"> <img src={insider} alt="Logo" /> </div>
+        <div class = "courseDesc">
+        <p id="Course Desc"> <b>{class} Class Description</b></p> 
+                {classDesc}
+        </div>
+          <div class="col-lg-5">
+            <h1 id="Course Title" class="font-weight-light">{class}</h1> 
+              <div>
+                <Form onSubmit={handlePost()}>
+                  <Form.Group className="mb-3" controlId="formBasicEmail" onChange = {e => setName(e.target.value)}>
+                   
+                    <Form.Control type="name" placeholder="Enter Name"/>
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                  
+                    <Form.Control type="professor" placeholder="Enter Professor Name" />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                  
+                    <textarea placeholder="  Enter Comment" onChange = {e => setPostComment(e.target.value)}/>
+                  </Form.Group>
+                  <Button variant="primary" type="submit">
+                    Submit
+                  </Button>
+                </Form>
+              </div>
+          </div>
+        </div>
+      </div>
+      <section >
+        {renderPost()}
+      </section>
+    </div>
+    );
+    */
   }
-  
-
-  
-  
 }export default withRouter(Class)

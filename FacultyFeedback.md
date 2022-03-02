@@ -26,7 +26,9 @@
 
 ## Week 8 ##
 - Check out [Github flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-- Way to knock down technical debt.  I look forward to seeing your new scenarios for this term. Add stories to backlog to this terms new scenario #1 and tag them so you know what needs to done to complete scenario #1
+- Way to knock down technical debt.  I look forward to seeing your new scenarios for this term.
+- Add stories to backlog to this terms new scenario #1 and tag them so you know what needs to done to complete scenario #1
+- Every team member should complete the peer survey: https://docs.google.com/forms/d/e/1FAIpQLScTBbLv1_KgEfeY1Nqp1ozr5NM2qllgkXMywh-Be8-Cv4vP4g/viewform?usp=sf_link
 
 ## Week 9 ##
 

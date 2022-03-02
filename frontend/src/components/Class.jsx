@@ -63,13 +63,19 @@ function Class(props){
     console.log("handleName: " + event.target.value)
     name = event.target.value
   }
+  /*
+  const handleName= e =>{
+    console.log("handleName: " + event.target.value)
+    setName(e.target.value);
+  };
+  */
 
   const handleComment = (event) => {
     postComment = event.target.value
   }
-
   const handlePost = Posts => {
     console.log("handlePost: " + name + "- " + postComment)
+
     axios
       .post("http://localhost:8000/api/Posts/", 
       {
@@ -122,8 +128,5 @@ function Class(props){
       </section>
     </div>
     )
-  
-
-  
-  
+ 
 }export default withRouter(Class)

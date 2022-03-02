@@ -40,12 +40,6 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "api"
-    "django.contrib.sites", # <--
-    "allauth", # <--
-    "allauth.account", # <--
-    "allauth.socialaccount", # <--
-    "allauth.socialaccount.providers.google",
-    "InsiderPlatform" #this is my app name ,you can name your app anything you want
 ]
 
 MIDDLEWARE = [
@@ -112,17 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-SOCIALACCOUNT_PROVIDERS = {
-   'google': {
-      'SCOPE': [
-         'profile',
-         'email',
-      ],
-      'AUTH_PARAMS': {
-         'access_type': 'online',
-      }
-   }
-}
+
 
 
 # Internationalization
@@ -138,13 +122,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-SITE_ID = 1
-LOGIN_REDIRECT_URL = "/"
+
 STATIC_URL = "/static/"
 
 CORS_ORIGIN_WHITELIST = ["http://localhost:3000"]
-#add this in the end of file
-AUTHENTICATION_BACKENDS = (
-   "django.contrib.auth.backends.ModelBackend",
-   "allauth.account.auth_backends.AuthenticationBackend",
-)

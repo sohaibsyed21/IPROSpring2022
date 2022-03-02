@@ -1,6 +1,7 @@
 import React from "react";
-
+import Footer from "./Footer";
 function About() {
+  Footer()
   return (
     <div className="about">
       <div class="container">
@@ -23,5 +24,4 @@ function About() {
     </div>
   );
 }
-
 export default About;

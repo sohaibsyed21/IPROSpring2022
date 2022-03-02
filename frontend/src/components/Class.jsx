@@ -43,6 +43,7 @@ function Class(props){
   }
 
 
+
   const refreshPosts = () => {
     axios
       .get("http://localhost:8000/api/Posts/")
@@ -58,7 +59,10 @@ function Class(props){
       .get("http://localhost:8000/api/Classes/")
       .then(res => setClassList(res.data))
       .catch(err => console.log(err));
-  } 
+
+  }
+  
+
 
   const handleName = (event) => {
     console.log("handleName: " + event.target.value)
@@ -74,7 +78,6 @@ function Class(props){
   const handleComment = (event) => {
     postComment = event.target.value
   }
-
   const handlePost = Posts => {
     console.log("handlePost: " + name + "- " + postComment)
 
@@ -115,7 +118,9 @@ function Class(props){
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                   
-                    <textarea placeholder="  Enter Comment" onChange = {e => postComment( e.target.value) }/>
+
+                    <textarea placeholder="  Enter Comment" onChange = {e => setPostComment( e.target.value) }/>
+
                   </Form.Group>
                   <Button variant="primary" type="submit">
                     Submit
@@ -130,5 +135,5 @@ function Class(props){
       </section>
     </div>
     )
-  
+
 }export default withRouter(Class)

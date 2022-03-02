@@ -107,7 +107,7 @@ function Class(props){
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                   
-                    <textarea placeholder="  Enter Comment" onChange = {e => postComment( e.target.value) }/>
+                    <textarea placeholder="  Enter Comment" onChange = {e => setPostComment( e.target.value) }/>
                   </Form.Group>
                   <Button variant="primary" type="submit">
                     Submit

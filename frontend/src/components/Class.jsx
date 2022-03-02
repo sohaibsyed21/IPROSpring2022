@@ -42,12 +42,14 @@ function Class(props){
     ))
   }
 
+
   const refreshPosts = () => {
     axios
       .get("http://localhost:8000/api/Posts/")
       .then(res =>  setPostList(res.data.filter(classNum => classNum.Classes === course)) )
       .catch(err => console.log(err));
   }
+
 
   ////////// END TESTING AREA //////////
 
@@ -56,13 +58,18 @@ function Class(props){
       .get("http://localhost:8000/api/Classes/")
       .then(res => setClassList(res.data))
       .catch(err => console.log(err));
-  }
-  
+  } 
 
   const handleName = (event) => {
     console.log("handleName: " + event.target.value)
     name = event.target.value
   }
+  /*
+  const handleName= e =>{
+    console.log("handleName: " + event.target.value)
+    setName(e.target.value);
+  };
+  */
 
   const handleComment = (event) => {
     postComment = event.target.value
@@ -70,6 +77,7 @@ function Class(props){
 
   const handlePost = Posts => {
     console.log("handlePost: " + name + "- " + postComment)
+
     axios
       .post("http://localhost:8000/api/Posts/", 
       {
@@ -122,8 +130,5 @@ function Class(props){
       </section>
     </div>
     )
-  
-
-  
   
 }export default withRouter(Class)

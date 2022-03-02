@@ -1,5 +1,3 @@
-import React, {useState, Component} from "react";
-import { Redirect } from "react-router";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home"

@@ -22,10 +22,11 @@
 - Work toward completing to functional components change 3/1
 - From there figure out the  next scenario you are driving for
 
-
 ## Week 7 ##
 
 ## Week 8 ##
+- Check out [Github flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- Way to knock down technical debt.  I look forward to seeing your new scenarios for this term. Add stories to backlog to this terms new scenario #1 and tag them so you know what needs to done to complete scenario #1
 
 ## Week 9 ##
 

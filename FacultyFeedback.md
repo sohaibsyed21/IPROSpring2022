@@ -31,6 +31,10 @@
 - Every team member should complete the peer survey: https://docs.google.com/forms/d/e/1FAIpQLScTBbLv1_KgEfeY1Nqp1ozr5NM2qllgkXMywh-Be8-Cv4vP4g/viewform?usp=sf_link
 
 ## Week 9 ##
+- Look at the PDD and the scenarios there and make sure they represented on the board 
+- Figure out what can you get done in four weeks after spring break
+- If you were to define what you'll get done in the  four weeks after spring break in two to three sentences what would it be?
+- You have a huge head start and working software starting the course.  You have reduced technical debt with your changes, so now deliver new capabilities.
 
 ## Week 10 ##
 

@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import Footer from "./components/Footer"
 import About from "./components/About"
 import Class from "./components/Class"
+import Post from "./components/Post"
 
 
 export default function App () {
@@ -22,6 +23,7 @@ export default function App () {
           <Route path="/" exact component={() => <Home />} />
           <Route path="/about" exact component={() => <About />} />
           <Route path="/class" exact component={() => <Class />} />
+          <Route path="/post" exact component={() => <Post />} />
         </Switch>
         <Footer />
       </Router>

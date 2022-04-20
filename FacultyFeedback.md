@@ -45,5 +45,15 @@
 ## Week 13 ##
 
 ## Week 14 ##
-
+- Every team member needs to complete the peer review survey before the end of class - https://forms.gle/UFVs9smkmLVf7KRZ8
+- You want to ensure that you are full screen and presentation mode in the presentation software
+- IIT only?  Is your customer only IIT or is IIT college students your first audience?
+- I like your persona and the "talk track" for the personas
+- I like the fact that you have a grad and ungrad student
+- Think about transitions from one slide to another like - "Now, <person name> will be covering scenario 1"
+- Good tie in from personas to the same "personas" in the scenarios
+- What is AAH?  Mention its an architecture course
+- There doesn't seem to be a specific user awareness (e.g., a login)
+- Don't reuse last terms "do differently" - given what you did quarter what we do differently
+- Final presentation template: https://github.com/mschray/IPro497Sample/blob/main/Course%20Content/Final%20Presentation%20Template.pptx
 ## Week 15 ##
